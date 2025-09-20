@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Hub - Developer Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Eclipse Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#scripts" class="nav-link">Scripts</a></li>
+                <li><a href="#discord" class="nav-link">Discord</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="main-content">
+      
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to <span class="gradient-text">Eclipse Hub</span></h1>
+                    <p class="hero-subtitle">Your ultimate platform for scripts, automation tools, and developer resources</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary glow-btn">Get Started</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <i class="fas fa-terminal"></i>
+                        <span>Scripts</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-cogs"></i>
+                        <span>Automation</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-users"></i>
+                        <span>Community</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-section">
+                <h2 class="section-title">Featured Resources</h2>
+                <div class="card-grid">
+                    <div class="glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Latest Updates</h3>
+                        <p>Discover the newest scripts and tools added to our platform</p>
+                        <button class="card-btn">Explore</button>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Popular Scripts</h3>
+                        <p>Most downloaded and highly rated automation scripts</p>
+                        <button class="card-btn">View All</button>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3>Announcements</h3>
+                        <p>Stay updated with platform news and community events</p>
+                        <button class="card-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section id="scripts" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Script Repository</h2>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search scripts..." id="script-search">
+                </div>
+            </div>
+            
+            <div class="script-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="automation">Automation</button>
+                <button class="category-btn" data-category="utility">Utility</button>
+                <button class="category-btn" data-category="web">Web Dev</button>
+                <button class="category-btn" data-category="system">System</button>
+            </div>
+
+            <div class="scripts-grid" id="scripts-container">
+                
+            </div>
+        </section>
+
+        <section id="discord" class="section">
+            <div class="discord-hero">
+                <div class="discord-content">
+                    <h2 class="section-title">Join Our Community</h2>
+                    <p class="discord-subtitle">Connect with fellow developers, get support, and stay updated</p>
+                    
+                    <div class="discord-features">
+                        <div class="discord-feature">
+                            <i class="fas fa-comments"></i>
+                            <h3>Discussion Channels</h3>
+                            <p>Share ideas and get help from the community</p>
+                        </div>
+                        <div class="discord-feature">
+                            <i class="fas fa-headset"></i>
+                            <h3>24/7 Support</h3>
+                            <p>Get assistance whenever you need it</p>
+                        </div>
+                        <div class="discord-feature">
+                            <i class="fas fa-calendar"></i>
+                            <h3>Events & Updates</h3>
+                            <p>Stay informed about new releases and events</p>
+                        </div>
+                    </div>
+
+                    <div class="discord-buttons">
+                        <button class="btn btn-discord glow-btn">
+                            <i class="fab fa-discord"></i>
+                            Join Discord Server
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Guidelines
+                        </button>
+                    </div>
+                </div>
+                <div class="discord-visual">
+                    <div class="discord-widget">
+                        <div class="widget-header">
+                            <i class="fab fa-discord"></i>
+                            <span>Eclipse Hub Community</span>
+                        </div>
+                        <div class="widget-stats">
+                            <div class="stat">
+                                <span class="stat-number">2,847</span>
+                                <span class="stat-label">Members</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">Online</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I use the script copy feature?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply hover over any script card and click the copy button that appears. The script will be automatically copied to your clipboard for easy use.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the scripts safe to use?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All scripts undergo thorough review and testing before being added to our platform. We maintain strict security standards to ensure user safety.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I contribute my own scripts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We welcome community contributions. Join our Discord server to learn about the submission process and guidelines.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I switch between themes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Use the theme toggle button in the top-right corner to switch between light and dark modes. Your preference will be saved automatically.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is Eclipse Hub mobile-friendly?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Eclipse Hub is fully responsive and optimized for all devices, from desktop computers to smartphones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="copy-notification" class="copy-notification">
+        <i class="fas fa-check"></i>
+        <span>Script copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
